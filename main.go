@@ -7,5 +7,8 @@ import (
 )
 
 func main() {
-	fmt.Println(ifflow.Sqrt(2), ifflow.Sqrt(-4))
+	fmt.Println(
+		ifflow.Pow(3, 2, 10),
+		ifflow.Pow(3, 3, 20),
+	)
 }
