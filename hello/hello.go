@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/zeroray/string"
+	"github.com/zeroray/learning-golang/string"
 )
 
 func main() {
