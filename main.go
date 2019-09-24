@@ -1,9 +1,11 @@
 package main
 
 import (
-	"github.com/zeroray/learning-golang/ciclofor"
+	"fmt"
+
+	"github.com/zeroray/learning-golang/ifflow"
 )
 
 func main() {
-	ciclofor.SumNumber()
+	fmt.Println(ifflow.Sqrt(2), ifflow.Sqrt(-4))
 }
