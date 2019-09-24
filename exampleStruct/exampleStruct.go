@@ -8,7 +8,8 @@ type Vertex struct {
 }
 
 func DeclareVertex() {
-	v := Vertex{1, 3}
-	v.X = 4
-	fmt.Println(v.X)
+	p := Vertex{1, 2}
+	q := &p
+	q.X = 1e2
+	fmt.Println(p)
 }
