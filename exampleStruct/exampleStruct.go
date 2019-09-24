@@ -3,13 +3,16 @@ package exampleStruct
 import "fmt"
 
 type Vertex struct {
-	X int
-	Y int
+	X, Y int
 }
 
+var (
+	p = Vertex{1, 2}  // has type Vertex
+	q = &Vertex{1, 2} // has type *Vertex
+	r = Vertex{X: 1}  // Y:0 is implicit
+	s = Vertex{}      // X:0 and y:0
+)
+
 func DeclareVertex() {
-	p := Vertex{1, 2}
-	q := &p
-	q.X = 1e2
-	fmt.Println(p)
+	fmt.Println(p, q, r, s)
 }
