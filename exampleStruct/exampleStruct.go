@@ -7,13 +7,18 @@ type Vertex struct {
 }
 
 // var m map[string]Vertex
+// var m = map[string]Vertex{
+// 	"My Company": Vertex{
+// 		33.333333, -77.7777777,
+// 	},
+// 	"Other Company": Vertex{
+// 		44.444444, -55.000005,
+// 	},
+// }
+
 var m = map[string]Vertex{
-	"My Company": Vertex{
-		33.333333, -77.7777777,
-	},
-	"Other Company": Vertex{
-		44.444444, -55.000005,
-	},
+	"My Company":    {33.333333, -77.7777777},
+	"Other Company": {44.444444, -55.000005},
 }
 
 func DeclareVertex() {
@@ -22,5 +27,5 @@ func DeclareVertex() {
 	// 	33.33333332, -77.777777,
 	// }
 	// fmt.Println(m["My Company"])
-	fmt.Println(m["Other"])
+	fmt.Println(m)
 }
