@@ -40,3 +40,11 @@ func CreateSlices() {
 func printSlice(s string, x []int) {
 	fmt.Printf("%s len=%d cap=%d %v\n", s, len(x), cap(x), x)
 }
+
+func SliceNil() {
+	var z []int
+	printSlice("z", z)
+	if z == nil {
+		fmt.Println("Nil!")
+	}
+}
