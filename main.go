@@ -1,10 +1,11 @@
 package main
 
-import "github.com/zeroray/learning-golang/slices"
+import "github.com/zeroray/learning-golang/functions"
 
 func main() {
 	// slices.ReadSlice()
 	// slices.SliceOfSlice()
 	// slices.CreateSlices()
-	slices.SliceNil()
+	//slices.SliceNil()
+	functions.ValuesTypeFunction()
 }
