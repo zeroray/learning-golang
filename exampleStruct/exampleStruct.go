@@ -3,14 +3,24 @@ package exampleStruct
 import "fmt"
 
 type Vertex struct {
-	X, Y int
+	Lat, Long float64
+}
+
+// var m map[string]Vertex
+var m = map[string]Vertex{
+	"My Company": Vertex{
+		33.333333, -77.7777777,
+	},
+	"Other Company": Vertex{
+		44.444444, -55.000005,
+	},
 }
 
 func DeclareVertex() {
-	//v := new(Vertex)
-	var v *Vertex = new(Vertex)
-	fmt.Println(v) // initial in 0
-	v.X, v.Y = 11, 9
-	fmt.Println(v)
-	fmt.Println(*v) // Show value
+	// m = make(map[string]Vertex)
+	// m["My Company"] = Vertex{
+	// 	33.33333332, -77.777777,
+	// }
+	// fmt.Println(m["My Company"])
+	fmt.Println(m["Other"])
 }
