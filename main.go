@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/zeroray/learning-golang/exampleStruct"
-)
+import "github.com/zeroray/learning-golang/slices"
 
 func main() {
-	exampleStruct.DeclareVertex()
+	slices.ReadSlice()
 }
