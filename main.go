@@ -1,7 +1,9 @@
 package main
 
-import "github.com/zeroray/learning-golang/pointers"
+import (
+	"github.com/zeroray/learning-golang/interfaces"
+)
 
 func main() {
-	pointers.Main()
+	interfaces.Main()
 }
