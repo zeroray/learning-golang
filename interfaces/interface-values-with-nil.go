@@ -2,6 +2,9 @@ package interfaces
 
 import "fmt"
 
+/*
+import "fmt"
+
 type I interface {
 	M()
 }
@@ -29,7 +32,7 @@ func Main4() {
 	i = &T{"Hello"}
 	describe(i)
 	i.M()
-}
+}*/
 
 func describe(i I) {
 	fmt.Printf("(%v, %T)\n", i, i)
