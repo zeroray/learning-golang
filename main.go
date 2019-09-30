@@ -1,16 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"github.com/zeroray/learning-golang/methods"
-	"math"
-)
+import "github.com/zeroray/learning-golang/pointers"
 
 func main() {
-/*	v := methods.Vertex{3,4}
-	fmt.Println(v.Abs())
-*/
-
-	f := methods.MyFloat(-math.Sqrt(2))
-	fmt.Println(f.Abs())
+	pointers.Main()
 }
