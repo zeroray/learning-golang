@@ -2,43 +2,39 @@ package pointers
 
 import (
 	"fmt"
-	"math"
 )
 
 type Vertex struct{
 	X, Y float64
 }
 
-type User struct {
-	name string
-	age int
-}
-
-func (v Vertex) Abs() float64 {
+/*func Abs(v Vertex) float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
-func (v Vertex) Scale(f float64) {
+func Scale(v *Vertex, f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
+}*/
+
+func (v *Vertex) Scale(f float64) {
 	v.X = v.X * f
 	v.Y = v.Y * f
 }
 
-// Change u User to u *User and vice versa
-func (u *User) changeName(name string) {
-	u.name = name
-}
-
-// Change u User to u *User and vice versa
-func (u *User) birtday() {
-	u.age = u.age + 1
+func ScaleFunc(v *Vertex, f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
 }
 
 func Main() {
-	u := User{"Daniel", 32}
-	fmt.Println(u)
-	u.birtday()
-	fmt.Println(u)
-	u.changeName("Daniel Fuentes")
-	fmt.Println(u)
+	v := Vertex{3,4}
+	v.Scale(2)
+	ScaleFunc(&v, 10)
 
+	p := &Vertex{4,3}
+	p.Scale(3)
+	ScaleFunc(p, 8)
+
+	fmt.Println(v, p)
 }
