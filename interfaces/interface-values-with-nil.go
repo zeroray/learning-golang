@@ -1,7 +1,5 @@
 package interfaces
 
-import "fmt"
-
 /*
 import "fmt"
 
@@ -34,6 +32,6 @@ func Main4() {
 	i.M()
 }*/
 
-func describe(i I) {
+/*func describe(i I) {
 	fmt.Printf("(%v, %T)\n", i, i)
-}
+}*/
