@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	interfaces.Main2()
+	interfaces.Main3()
 }

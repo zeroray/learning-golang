@@ -1,5 +1,5 @@
 package interfaces
-
+/*
 import "fmt"
 
 type I interface {
@@ -21,3 +21,4 @@ func Main2() {
 	var i I = T{"hello"}
 	i.M()
 }
+ */
