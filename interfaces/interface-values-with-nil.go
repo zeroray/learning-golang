@@ -1,9 +1,6 @@
 package interfaces
 
-/*import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 type I interface {
 	M()
@@ -14,28 +11,26 @@ type T struct {
 }
 
 func (t *T) M() {
+	if t == nil {
+		fmt.Println("<nil>")
+		return
+	}
 	fmt.Println(t.S)
 }
 
-type F float64
-
-func (f F) M() {
-	fmt.Println(f)
-}
-
-func Main3() {
+func Main4() {
 	var i I
+
+	var t *T
+	i = t
+	describe(i)
+	i.M()
 
 	i = &T{"Hello"}
 	describe(i)
 	i.M()
-
-	i = F(math.Pi)
-	describe(i)
-	i.M()
 }
-*/
-/*func describe(i I) {
+
+func describe(i I) {
 	fmt.Printf("(%v, %T)\n", i, i)
 }
-*/
